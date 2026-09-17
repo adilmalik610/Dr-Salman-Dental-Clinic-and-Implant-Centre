@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Salman Dental Clinic &amp; Implant Centre — Buffer Zone, Karachi</title>
+<meta name="description" content="Dr. Salman Dental Clinic and Implant Centre in Sector 16-A, Buffer Zone, Karachi. Painless root canals, implants, dentures and crowns from a 4.9-star rated dental practice.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A6%B7%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E2B2A;
+    --teal-deep:#0F3D3E;
+    --teal:#1C5C5A;
+    --mint:#7FC8A9;
+    --mint-pale:#E4F3EB;
+    --coral:#E8664D;
+    --coral-deep:#C94E38;
+    --paper:#F6F7F5;
+    --paper-warm:#FDFBF7;
+    --line:#D7DFDC;
+    --white:#FFFFFF;
+    --shadow: 0 20px 50px -25px rgba(15,61,62,0.35);
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0;color:var(--teal-deep);}
+  h2{font-size:clamp(28px,3.6vw,42px);letter-spacing:-0.01em;}
+  h3{font-size:20px;}
+  p{margin:0;}
+  .measure{max-width:62ch;}
+
+  /* ---------- Nav ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(253,251,247,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 28px;max-width:1180px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .brand-mark{width:38px;height:38px;flex:none;}
+  .brand-text{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--teal-deep);line-height:1.1;}
+  .brand-text span{display:block;font-family:var(--sans);font-weight:500;font-size:11.5px;color:var(--teal);letter-spacing:0.02em;}
+  nav.links{display:flex;gap:32px;font-size:15px;font-weight:500;}
+  nav.links a{text-decoration:none;color:var(--ink);opacity:0.75;transition:opacity .2s;}
+  nav.links a:hover{opacity:1;}
+  .nav-cta{
+    display:flex;align-items:center;gap:14px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:999px;
+    font-weight:600;font-size:14.5px;text-decoration:none;
+    border:1px solid transparent;cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    font-family:var(--sans);
+  }
+  .btn-primary{background:var(--coral);color:var(--white);box-shadow:0 12px 24px -12px rgba(232,102,77,0.65);}
+  .btn-primary:hover{background:var(--coral-deep);transform:translateY(-1px);}
+  .btn-ghost{background:transparent;color:var(--teal-deep);border-color:var(--teal-deep);}
+  .btn-ghost:hover{background:var(--teal-deep);color:var(--white);}
+  .btn-outline-light{background:transparent;color:var(--white);border-color:rgba(255,255,255,0.55);}
+  .btn-outline-light:hover{background:rgba(255,255,255,0.12);}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:radial-gradient(120% 140% at 78% -10%, #E9F5EF 0%, var(--paper) 46%);
+    padding:76px 0 40px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center;
+  }
+  .eyebrow-note{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--mint-pale);color:var(--teal-deep);
+    padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:600;
+    margin-bottom:22px;
+  }
+  .eyebrow-note b{color:var(--coral-deep);}
+  .hero h1{font-size:clamp(36px,5vw,58px);letter-spacing:-0.015em;}
+  .hero h1 em{font-style:normal;color:var(--coral);}
+  .hero-sub{margin-top:20px;font-size:18px;color:#3B4E4C;max-width:46ch;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:34px;}
+  .hero-trust{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap;}
+  .trust-item{display:flex;flex-direction:column;}
+  .trust-item strong{font-family:var(--serif);font-size:26px;color:var(--teal-deep);}
+  .trust-item span{font-size:13px;color:#5C6D6B;margin-top:2px;}
+
+  .hero-art{position:relative;}
+  .hero-card{
+    background:var(--white);
+    border-radius:28px;
+    box-shadow:var(--shadow);
+    padding:34px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-card .ring{
+    position:absolute;inset:-40% -40% auto auto;width:70%;aspect-ratio:1;
+    background:radial-gradient(circle at 30% 30%, #B9E4D2 0%, transparent 70%);
+    opacity:0.7;
+  }
+  .hero-tooth{width:100%;height:auto;position:relative;z-index:1;}
+  .hero-badge{
+    position:absolute;left:-18px;bottom:26px;
+    background:var(--teal-deep);color:var(--white);
+    border-radius:18px;padding:16px 20px;
+    box-shadow:0 18px 30px -14px rgba(15,61,62,0.55);
+    display:flex;align-items:center;gap:12px;
+    max-width:230px;
+  }
+  .hero-badge .stars{color:#FFC65C;font-size:14px;letter-spacing:1px;}
+  .hero-badge strong{display:block;font-family:var(--serif);font-size:20px;}
+  .hero-badge span{font-size:12px;opacity:0.8;}
+
+  /* ---------- Marquee strip ---------- */
+  .strip{
+    background:var(--teal-deep);color:var(--white);
+    padding:16px 0;overflow:hidden;
+  }
+  .strip-inner{display:flex;gap:56px;white-space:nowrap;animation:scroll 26s linear infinite;font-family:var(--serif);font-size:16px;letter-spacing:0.02em;}
+  .strip-inner span{opacity:0.9;}
+  .strip-inner span::after{content:"•";margin-left:56px;color:var(--mint);}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ---------- Section shells ---------- */
+  section{padding:96px 0;}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:52px;flex-wrap:wrap;}
+  .section-head p{color:#4A5C5A;font-size:16.5px;margin-top:14px;}
+  .tag{
+    display:inline-block;font-size:13px;font-weight:600;color:var(--teal);
+    background:var(--mint-pale);padding:6px 14px;border-radius:999px;margin-bottom:16px;
+  }
+
+  /* ---------- About ---------- */
+  .about{background:var(--white);}
+  .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:center;}
+  .about-portrait{
+    background:linear-gradient(160deg, var(--teal-deep), var(--teal) 65%);
+    border-radius:26px;padding:40px;color:var(--white);position:relative;min-height:420px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    box-shadow:var(--shadow);
+  }
+  .about-portrait svg{position:absolute;top:32px;right:32px;width:120px;opacity:0.35;}
+  .about-portrait h3{color:var(--white);font-size:24px;}
+  .about-portrait span{font-size:14px;opacity:0.8;display:block;margin-top:6px;}
+  .about-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:16px;}
+  .about-list li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px;color:#33463F;}
+  .check{flex:none;width:22px;height:22px;border-radius:50%;background:var(--mint-pale);display:flex;align-items:center;justify-content:center;margin-top:2px;}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--paper);}
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .service-card{
+    background:var(--white);border:1px solid var(--line);border-radius:22px;
+    padding:32px 28px;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent;}
+  .service-icon{width:52px;height:52px;border-radius:16px;background:var(--mint-pale);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+  .service-icon svg{width:26px;height:26px;stroke:var(--teal-deep);}
+  .service-card h3{margin-bottom:10px;}
+  .service-card p{font-size:14.5px;color:#4E605E;}
+
+  /* ---------- Why us / stats ---------- */
+  .why{background:var(--teal-deep);color:var(--white);}
+  .why .section-head p{color:#BFE0D6;}
+  .why h2{color:var(--white);}
+  .why-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;}
+  .why-list{list-style:none;padding:0;margin:0;display:grid;gap:26px;}
+  .why-list li{display:flex;gap:18px;}
+  .why-num{font-family:var(--serif);font-size:22px;color:var(--mint);flex:none;width:34px;}
+  .why-list h3{color:var(--white);font-size:18px;margin-bottom:6px;}
+  .why-list p{font-size:14.5px;color:#C9E2DA;}
+  .stat-card{
+    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);
+    border-radius:22px;padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:28px;
+  }
+  .stat-card div strong{display:block;font-family:var(--serif);font-size:34px;color:var(--mint);}
+  .stat-card div span{font-size:13px;color:#C9E2DA;}
+
+  /* ---------- Testimonials ---------- */
+  .testimonials{background:var(--paper-warm);}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .t-card{
+    background:var(--white);border-radius:22px;padding:30px;border:1px solid var(--line);
+    display:flex;flex-direction:column;gap:18px;
+  }
+  .t-stars{color:#FFB74A;font-size:14px;letter-spacing:2px;}
+  .t-card p{font-size:15px;color:#33463F;}
+  .t-who{display:flex;align-items:center;gap:12px;margin-top:auto;}
+  .t-avatar{width:38px;height:38px;border-radius:50%;background:var(--mint-pale);display:flex;align-items:center;justify-content:center;font-family:var(--serif);color:var(--teal-deep);font-weight:600;}
+  .t-who strong{display:block;font-size:14px;}
+  .t-who span{font-size:12.5px;color:#71827F;}
+
+  /* ---------- Visit / map ---------- */
+  .visit{background:var(--white);}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);}
+  .visit-info{background:var(--teal-deep);color:var(--white);padding:52px 46px;display:flex;flex-direction:column;gap:28px;justify-content:center;}
+  .visit-info h2{color:var(--white);}
+  .info-row{display:flex;gap:16px;align-items:flex-start;}
+  .info-row svg{flex:none;width:22px;height:22px;stroke:var(--mint);margin-top:2px;}
+  .info-row strong{display:block;font-size:15px;}
+  .info-row span{font-size:14px;color:#C9E2DA;}
+  .hours-table{display:grid;gap:6px;font-size:13.5px;color:#C9E2DA;margin-top:4px;}
+  .hours-table div{display:flex;justify-content:space-between;gap:20px;}
+  .hours-table b{color:var(--white);font-weight:500;}
+  .map-embed{min-height:420px;background:var(--mint-pale);}
+  .map-embed iframe{width:100%;height:100%;min-height:420px;border:0;display:block;}
+
+  /* ---------- CTA banner ---------- */
+  .cta-band{background:var(--coral);color:var(--white);padding:64px 0;}
+  .cta-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;}
+  .cta-band h2{color:var(--white);font-size:clamp(24px,3vw,34px);max-width:520px;}
+  .cta-band .btn-primary{background:var(--teal-deep);box-shadow:none;}
+  .cta-band .btn-primary:hover{background:var(--ink);}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:#AFC4C0;padding:56px 0 28px;font-size:14px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.1);}
+  .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .foot-brand span{font-family:var(--serif);color:var(--white);font-size:18px;}
+  footer h4{color:var(--white);font-size:13.5px;font-weight:600;margin-bottom:16px;letter-spacing:0.02em;}
+  footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+  footer a{text-decoration:none;color:#AFC4C0;transition:color .2s;}
+  footer a:hover{color:var(--mint);}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:24px;font-size:12.5px;flex-wrap:wrap;gap:10px;}
+
+  /* ---------- Mobile ---------- */
+  @media (max-width:960px){
+    nav.links{display:none;}
+    .menu-btn{display:block;}
+    .hero-grid,.about-grid,.why-grid,.visit-grid{grid-template-columns:1fr;}
+    .about-grid{gap:40px;}
+    .about-portrait{min-height:280px;}
+    .service-grid,.t-grid{grid-template-columns:1fr 1fr;}
+    .foot-grid{grid-template-columns:1fr;gap:28px;}
+    .hero-badge{position:static;margin-top:20px;max-width:none;}
+    section{padding:64px 0;}
+  }
+  @media (max-width:620px){
+    .service-grid,.t-grid,.stat-card{grid-template-columns:1fr;}
+    .nav-cta .btn-ghost{display:none;}
+    .cta-band .wrap{flex-direction:column;align-items:flex-start;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .strip-inner{animation:none;}
+    .service-card{transition:none;}
+  }
+
+  :focus-visible{outline:2px solid var(--coral);outline-offset:3px;}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-row">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+        <path d="M24 6C15 6 9 11 9 19c0 6 2 8 3 13 1 4 1.5 9 4.5 9 2.5 0 3-4 3.2-8 .2-3.6 1-5.5 4.3-5.5s4.1 1.9 4.3 5.5c.2 4 .7 8 3.2 8 3 0 3.5-5 4.5-9 1-5 3-7 3-13 0-8-6-13-15-13Z" fill="#1C5C5A"/>
+        <path d="M24 6C15 6 9 11 9 19c0 6 2 8 3 13 1 4 1.5 9 4.5 9 2.5 0 3-4 3.2-8 .2-3.6 1-5.5 4.3-5.5s4.1 1.9 4.3 5.5c.2 4 .7 8 3.2 8 3 0 3.5-5 4.5-9 1-5 3-7 3-13 0-8-6-13-15-13Z" stroke="#0F3D3E" stroke-width="1"/>
+      </svg>
+      <span class="brand-text">Dr. Salman<span>Dental Clinic &amp; Implant Centre</span></span>
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#stories">Stories</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+923452218393">+92 345 2218393</a>
+      <a class="btn btn-primary" href="#visit">Book a visit</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow-note">Rated <b>4.9 / 5</b> across 214 patient reviews</div>
+        <h1>Dental care built around <em>painless</em>, precise treatment.</h1>
+        <p class="hero-sub">Dr. Salman Dental Clinic &amp; Implant Centre has spent years earning Sector 16-A's trust — from root canals and crowns to full implant and denture work, done gently and explained clearly.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+923452218393">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call the clinic
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/923452218393" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><strong>214+</strong><span>Five-star patient reviews</span></div>
+          <div class="trust-item"><strong>6 days</strong><span>Open every week, evenings included</span></div>
+          <div class="trust-item"><strong>Implants</strong><span>&amp; full denture rehabilitation</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-card">
+          <div class="ring"></div>
+          <svg class="hero-tooth" viewBox="0 0 380 380" fill="none">
+            <circle cx="190" cy="190" r="170" fill="#E4F3EB"/>
+            <path d="M190 70c-46 0-84 30-84 78 0 32 11 42 16 66 5 22 8 48 24 48 14 0 16-22 17-42 1-19 6-30 27-30s26 11 27 30c1 20 3 42 17 42 16 0 19-26 24-48 5-24 16-34 16-66 0-48-38-78-84-78Z" fill="#FDFBF7" stroke="#1C5C5A" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M164 130c-8 10-11 22-9 36" stroke="#7FC8A9" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="270" cy="112" r="10" fill="#E8664D"/>
+            <circle cx="292" cy="150" r="6" fill="#7FC8A9"/>
+            <circle cx="102" cy="160" r="7" fill="#7FC8A9"/>
+          </svg>
+          <div class="hero-badge">
+            <span class="stars">★★★★★</span>
+            <div>
+              <strong>4.9 rating</strong>
+              <span>from 214 verified Google reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="strip-inner">
+      <span>Root Canal Treatment</span>
+      <span>Dental Implants</span>
+      <span>Crowns &amp; Bridges</span>
+      <span>Full &amp; Partial Dentures</span>
+      <span>Scaling &amp; Whitening</span>
+      <span>Root Canal Treatment</span>
+      <span>Dental Implants</span>
+      <span>Crowns &amp; Bridges</span>
+      <span>Full &amp; Partial Dentures</span>
+      <span>Scaling &amp; Whitening</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-portrait">
+        <svg viewBox="0 0 100 100" fill="none"><path d="M50 12c-20 0-36 13-36 34 0 14 5 18 7 29 2 10 3 21 10 21 6 0 7-9 7-18 0-8 3-13 12-13s12 5 12 13c0 9 1 18 7 18 7 0 8-11 10-21 2-11 7-15 7-29 0-21-16-34-36-34Z" stroke="white" stroke-width="2"/></svg>
+        <h3>Dr. Salman</h3>
+        <span>Lead Dentist &amp; Implantologist — Dr. Salman Dental Clinic &amp; Implant Centre</span>
+      </div>
+      <div>
+        <span class="tag">Why patients keep coming back</span>
+        <h2>A calmer kind of dental visit.</h2>
+        <p class="measure" style="margin-top:18px;font-size:16.5px;color:#41544F;">Patients consistently describe the same thing after their appointment: treatment that didn't hurt, and a dentist who actually explained what was happening before doing it. That's the standard here — modern equipment, a clean, organised clinic, and enough time given to every case, from a single filling to a complete set of dentures.</p>
+        <ul class="about-list">
+          <li><span class="check">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1C5C5A" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>Root canal treatment on even long-neglected, severely damaged teeth — completed with minimal discomfort.</li>
+          <li><span class="check">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1C5C5A" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>Custom dentures fitted for comfort, including care tailored to elderly patients.</li>
+          <li><span class="check">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1C5C5A" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>Every treatment plan is talked through step by step before it begins.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Treatments</span>
+          <h2>Everything your smile needs, under one roof.</h2>
+        </div>
+        <p class="measure">From routine cleanings to full-mouth implant rehabilitation — general and specialist dental care in a single clinic.</p>
+      </div>
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-2 0-3-4-3.3-6.5C8.4 12 7 11 7 8a5 5 0 0 1 10 0c0 3-1.4 4-1.7 6.5C15 17 14 21 12 21Z"/></svg></div>
+          <h3>Root Canal Treatment</h3>
+          <p>Pain relief and infection removal from the tooth's root, finished with a natural-feeling crown.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6M9 6h6M8 21l1-8H7a3 3 0 0 1-3-4l1-3h14l1 3a3 3 0 0 1-3 4h-2l1 8-4-3-4 3Z"/></svg></div>
+          <h3>Dental Implants</h3>
+          <p>Permanent, natural-looking tooth replacement — single implants through to full-arch restorations.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 12h6M12 9v6"/></svg></div>
+          <h3>Crowns &amp; Bridges</h3>
+          <p>Custom-fitted restorations that rebuild broken or worn teeth so they look and feel natural.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12c0-4 3.5-8 8-8s8 4 8 8-3.5 8-8 8-8-4-8-8Z"/><path d="M8 12h8"/></svg></div>
+          <h3>Full &amp; Partial Dentures</h3>
+          <p>Comfortable, custom-fitted dentures — a treatment families across Buffer Zone regularly recommend.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></div>
+          <h3>Scaling &amp; Whitening</h3>
+          <p>Professional cleaning and brightening to clear plaque, stains and everyday buildup.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8 15c1.5 1.3 6.5 1.3 8 0"/></svg></div>
+          <h3>General &amp; Family Dentistry</h3>
+          <p>Check-ups, fillings and preventive care for every age, in a calm, unhurried setting.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY / STATS -->
+  <section class="why">
+    <div class="wrap why-grid">
+      <div>
+        <span class="tag" style="background:rgba(255,255,255,0.12);color:var(--mint);">The clinic experience</span>
+        <h2>Why Sector 16-A trusts this chair.</h2>
+        <ul class="why-list" style="margin-top:32px;">
+          <li>
+            <span class="why-num">01</span>
+            <div><h3>Modern equipment, honest pace</h3><p>Up-to-date tools paired with treatment that isn't rushed — every step is explained before it happens.</p></div>
+          </li>
+          <li>
+            <span class="why-num">02</span>
+            <div><h3>Comfort-first procedures</h3><p>Patients repeatedly note little to no pain during and after root canals, extractions and implant work.</p></div>
+          </li>
+          <li>
+            <span class="why-num">03</span>
+            <div><h3>Care for the whole family</h3><p>From a child's first check-up to a parent's denture fitting, treatment plans are built around the patient.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="stat-card">
+        <div><strong>4.9★</strong><span>Average Google rating</span></div>
+        <div><strong>214+</strong><span>Patient reviews</span></div>
+        <div><strong>6</strong><span>Days open weekly</span></div>
+        <div><strong>2</strong><span>Clinic sessions daily</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="stories">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Patient stories</span>
+          <h2>In their own words.</h2>
+        </div>
+      </div>
+      <div class="t-grid">
+        <div class="t-card">
+          <span class="t-stars">★★★★★</span>
+          <p>After nearly a decade of tooth pain, a root canal here finally solved it — completely painless thanks to modern equipment and a confident, careful approach.</p>
+          <div class="t-who">
+            <div class="t-avatar">A</div>
+            <div><strong>Long-time patient</strong><span>Root canal treatment</span></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <span class="t-stars">★★★★★</span>
+          <p>Impressed by how clearly every step of treatment was explained, in a clinic that's clean, organised and clearly equipped with current technology.</p>
+          <div class="t-who">
+            <div class="t-avatar">S</div>
+            <div><strong>New patient</strong><span>General consultation</span></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <span class="t-stars">★★★★★</span>
+          <p>Both parents were fitted with dentures that turned out comfortable and natural — care that was patient, professional and genuinely reassuring throughout.</p>
+          <div class="t-who">
+            <div class="t-avatar">F</div>
+            <div><strong>Family patient</strong><span>Denture treatment</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT / MAP -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Visit the clinic</span>
+          <h2>Come in, or book ahead.</h2>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-info">
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11.5a7 7 0 0 1 14 0C19 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <div><strong>Address</strong><span>Shop No. 4, Ali Pride, Sector 16-A, Buffer Zone, Karachi</span></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong>Phone / WhatsApp</strong><span><a href="tel:+923452218393">+92 345 2218393</a></span></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <div>
+              <strong>Clinic hours</strong>
+              <div class="hours-table">
+                <div><span>Mon – Thu, Sat</span><b>11:00 AM–2:00 PM · 5:30–10:00 PM</b></div>
+                <div><span>Friday</span><b>5:30–10:00 PM</b></div>
+                <div><span>Sunday</span><b>Closed</b></div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-outline-light" href="https://www.google.com/maps/place/Dr+Salman+Dental+Clinic+and+Implant+Centre,+Shop+no+4+ALI+PRIDE+SECTOR+16-A+BUFFER+ZONE+KARACHI+16-A,+Sector+16+A+Buffer+Zone,+Karachi/data=!4m2!3m1!1s0x3eb33fdd4a55ea39:0x2bb38819d8fd4355!18m1!1e1" target="_blank" rel="noopener" style="align-self:flex-start;">Get directions →</a>
+        </div>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=24.9527075,67.0688692&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Clinic location map"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Toothache, checkup, or a smile you've been putting off — let's fix it this week.</h2>
+      <a class="btn btn-primary" href="tel:+923452218393">Call +92 345 2218393</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="30" height="30" viewBox="0 0 48 48" fill="none"><path d="M24 6C15 6 9 11 9 19c0 6 2 8 3 13 1 4 1.5 9 4.5 9 2.5 0 3-4 3.2-8 .2-3.6 1-5.5 4.3-5.5s4.1 1.9 4.3 5.5c.2 4 .7 8 3.2 8 3 0 3.5-5 4.5-9 1-5 3-7 3-13 0-8-6-13-15-13Z" fill="#7FC8A9"/></svg>
+          <span>Dr. Salman Dental Clinic &amp; Implant Centre</span>
+        </div>
+        <p style="max-width:32ch;color:#8FA6A2;">Sector 16-A, Buffer Zone, Karachi. General and specialist dental care, six days a week.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About the clinic</a></li>
+          <li><a href="#stories">Patient stories</a></li>
+          <li><a href="#visit">Visit &amp; hours</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+923452218393">+92 345 2218393</a></li>
+          <li><a href="https://wa.me/923452218393" target="_blank" rel="noopener">WhatsApp the clinic</a></li>
+          <li><a href="https://www.google.com/maps/place/Dr+Salman+Dental+Clinic+and+Implant+Centre,+Shop+no+4+ALI+PRIDE+SECTOR+16-A+BUFFER+ZONE+KARACHI+16-A,+Sector+16+A+Buffer+Zone,+Karachi/data=!4m2!3m1!1s0x3eb33fdd4a55ea39:0x2bb38819d8fd4355!18m1!1e1" target="_blank" rel="noopener">Shop 4, Ali Pride, Sector 16-A</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Dr. Salman Dental Clinic &amp; Implant Centre. All rights reserved.</span>
+      <span>Site design by request — not an official clinic publication.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile-friendly smooth focus for nav anchor links (progressive enhancement only)
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = this.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
